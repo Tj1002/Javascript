@@ -220,7 +220,8 @@ console.log(charArray); // Output: ['h', 'e', 'l', 'l', 'o']
 const obj = { a: 1, b: 2, c: 3 };
 const keysArray = Array.from(Object.keys(obj));
 console.log(keysArray); // Output: ['a', 'b', 'c']
-const valuesArray = Array.from(Object.values(obj));
-console.log(valuesArray); // Output: [1,2,3]
+
 //
 //from values
+const valuesArray = Array.from(Object.values(obj));
+console.log(valuesArray); // Output: [1,2,3]
