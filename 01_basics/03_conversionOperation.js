@@ -32,3 +32,42 @@ console.log(strNum);
 console.log(str);
 console.log(typeof str);
 console.log(typeof strNum);
+
+//***************************  operations*****************************************
+
+let value = 10;
+let negval = -value;
+// console.log(negval);
+
+let str1 = "tausif ";
+let str2 = "jawed";
+let str3 = str1 + str2;
+// console.log(str3);
+
+// console.log("1" + 2); //"12"
+// console.log(1 + "2"); //"12"
+// console.log("1" + 2 + 2); // "122"
+// console.log(1 + 2 + "2"); //"32"
+// console.log(1 + "2" + 2); // "122"
+
+console.log(true);
+console.log(+true); // o/p=1 when you use the unary plus operator (+) before a value, it attempts to convert that value to a number.
+// console.log(true+); //error
+console.log(+false); // o/p=0
+console.log(+""); //o/p=0
+console.log(+"75"); //o/p=0
+console.log(+"tj"); //o/p=0
+
+//prefix postfix
+
+let x = 5;
+
+// Prefix increment
+let y = ++x; // y = 6, x = 6
+
+// Postfix increment
+let z = x++; // z = 6, x = 7
+
+console.log(y); // Output: 6
+console.log(z); // Output: 6
+console.log(x); // Output: 7
