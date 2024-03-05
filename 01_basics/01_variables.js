@@ -21,10 +21,10 @@ console.log(x); // 1O
 
 const y = 10;
 if (true) {
-  const y = 20; // Error: Assignment to constant variable
+  const y = 20; // Output: 20  shadowing of variables, meaning you can declare a variable with the same name inside a block without affecting the outer variable
   console.log(y);
 }
-console.log(y);
+console.log(y); //10
 
 var z = 10;
 
