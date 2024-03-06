@@ -133,3 +133,41 @@ console.log(cars[2]); //output { make: 'Ford', model: 'Mustang', year: 2022 }
 console.log(Object.keys(cars[0])); //output [ 'make', 'model', 'year' ] return array
 console.log(Object.values(cars[0])); //output [ 'Toyota', 'Camry', 2020 ] return array
 console.log(Object.entries(cars[0])); //output [ [ 'make', 'Toyota' ], [ 'model', 'Camry' ], [ 'year', 2020 ] ] return array
+//
+//
+//+++++++++++++++++++++++++++++++++++object destructure+++++++++++++++++++++++++++++++++++++++++++++++
+// Object destructuring is a feature in JavaScript that allows you to extract properties from objects and bind them to variables.
+
+const person1 = {
+  name: "John",
+  age: 30,
+  city: "New York",
+};
+// Destructure object properties into variables
+const { name, age, city } = person1;
+console.log(name);
+console.log(age);
+//nested destructuring
+//
+{
+  const person = {
+    name: "John",
+    age: 30,
+    address: {
+      city: "New York",
+      country: "USA",
+    },
+  };
+
+  // Destructure nested object properties into variables
+  const {
+    name,
+    age,
+    address: { city, country },
+  } = person;
+
+  console.log(name); // Output: John
+  console.log(age); // Output: 30
+  console.log(city); // Output: New York
+  console.log(country); // Output: USA
+}
