@@ -6,8 +6,8 @@ let valueInNumber = Number(score);
 console.log(typeof valueInNumber); // number
 console.log(valueInNumber); //NaN
 let s = null;
-console.log(typeof s); //string
-console.log(typeof s); //string
+console.log(typeof s); //object
+
 
 let valueInNum = Number(s);
 console.log(typeof valueInNum); // number
